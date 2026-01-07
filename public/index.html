@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cerita Kita</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              romanticPink: "#f9a8d4",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="min-h-screen bg-gradient-to-b from-[#0f0218] via-[#150022] to-[#02010a] text-white"
+  >
+    <!-- layer glow -->
+    <div
+      class="pointer-events-none fixed inset-0 opacity-40 mix-blend-screen"
+      aria-hidden="true"
+    >
+      <div class="absolute -top-24 -left-24 w-80 h-80 bg-pink-500/40 blur-3xl rounded-full"></div>
+      <div class="absolute top-40 -right-10 w-72 h-72 bg-purple-500/40 blur-3xl rounded-full"></div>
+      <div class="absolute bottom-[-80px] left-1/3 w-96 h-96 bg-fuchsia-500/30 blur-3xl rounded-full"></div>
+    </div>
+
+    <main class="relative min-h-screen flex flex-col">
+      <!-- HERO + LAGU -->
+      <section
+        class="flex flex-col items-center justify-center min-h-screen px-4 text-center"
+      >
+        <div class="max-w-2xl">
+          <p class="text-[11px] md:text-xs uppercase tracking-[0.3em] text-pink-200/70 mb-3">
+            Buat Selly yang jauh tapi dekat dihati (aszek🤙🏼)
+          </p>
+          <h1
+            class="text-4xl md:text-6xl font-semibold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-300 via-rose-200 to-violet-300"
+          >
+            Buat Selly pacar aku yang imut, lucu, cantik
+          </h1>
+          <br>
+          <p class="max-w-xl mx-auto text-sm md:text-lg text-pink-100 mb-8">
+            Please jangan jauh jauh dari aku. kamu beneran buat aku gila cepet cepet balik lagi ke jember aku kangen
+          </p>
+
+          <button
+            id="play-toggle"
+            class="px-7 py-3 rounded-full bg-pink-500 hover:bg-pink-400 text-sm md:text-base font-semibold shadow-lg shadow-pink-500/40 transition inline-flex items-center gap-2"
+          >
+            <span id="play-text">Ini apa ya?😋</span>
+          </button>
+
+          <audio id="bg-audio" src="/music/Best_Part.mp3" loop></audio>
+
+          <p class="mt-4 text-xs text-pink-200">
+            Klik aja gsh ragu kek sm sp aja
+          </p>
+        </div>
+      </section>
+
+      <!-- TIMELINE MOMENT -->
+      <section class="py-16 px-4 bg-black/40 backdrop-blur">
+        <div class="max-w-5xl mx-auto">
+          <h2 class="text-2xl md:text-3xl font-semibold mb-2 text-center">
+            Our Story
+          </h2>
+          <p class="text-center text-xs md:text-sm text-pink-200/80 mb-10">
+            Dikit aja, thank you for coming into my life. you are actually making me smile and laugh, thank you for your understanding, thank you for being my biggest supporter, and thank you for caring about me. i really appreciate you so much and you will always have a special place in my heart, i love youu💗
+          </p>
+
+          <div class="grid md:grid-cols-3 gap-6">
+            <!-- 1. Awal ketemu – 18 Okt -->
+            <a
+              href="/momen/momen1.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="rounded-3xl overflow-hidden border border-pink-500/30 bg-white/5 flex flex-col hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(236,72,153,0.4)] transition"
+            >
+              <img
+                src="/images/momen1.jpg"
+                alt="Hari Kita Bertemu"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4 text-sm flex-1 flex flex-col">
+                <p class="text-pink-300 font-semibold mb-1">
+                  Hari Kita Bertemu
+                </p>
+                <p class="text-[11px] text-pink-200 mb-2">
+                  PENDIDIK
+                </p>
+                <p class="text-pink-100 mb-3">
+                  waktu itu kamu cuma gantiin seseorang di PENDIDIK. Siapa yang nyangka dari situ  aku jadi kenal kamu lebih dekat. 
+                  gaada yang istimewa di mata orang lain, tapi buat aku, itu hari di mana hidup pelan‑pelan
+                  mengarahkan langkahku ke arah seli. Semua yang aku simpen dari sertijab cuma hari itu aku bisa deketin kmu.
+                  kalau ga hari ini kapan lagi kan? so kita ugal ugalan aja asek.
+                </p>
+                <div class="mt-auto grid grid-cols-3 gap-2">
+                    <img
+                        src="/images/momen1 (2).jpg"
+                        class="w-full h-16 object-cover rounded-md opacity-80"
+                        alt=""
+                    />
+                    <img
+                        src="/images/momen1 (3).jpg"
+                        class="w-full h-16 object-cover rounded-md opacity-80"
+                        alt=""
+                    />
+                    <img
+                        src="/images/momen1 (4).jpg"
+                        class="w-full h-16 object-cover rounded-md opacity-80"
+                        alt=""
+                    />
+                </div>
+              </div>
+            </a>
+
+            <!-- 2. Jadian di Teluk Love – 26 Okt -->
+            <a
+              href="/momen/momen2.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="rounded-3xl overflow-hidden border border-pink-500/30 bg-white/5 flex flex-col hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(236,72,153,0.4)] transition"
+            >
+              <img
+                src="/images/momen2.jpg"
+                alt="Teluk Love & Kata Iya"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4 text-sm flex-1 flex flex-col">
+                <p class="text-pink-300 font-semibold mb-1">
+                  Teluk Love and Word "Will you be my girl?"
+                </p>
+                <p class="text-[11px] text-pink-200 mb-2">
+                  26 Oktober · Teluk Love
+                </p>
+                <p class="text-pink-100 mb-3">
+                  Di Teluk Love, ombaknya biasa saja, tapi jantungku lagi jadi template jedag jedug
+                  pertama kalinya banget ini. Di gazebo itu sambil nunggu gak panas, aku beranikan diri meminta sesuatu
+                  yang besar, "Will you be my girl?" dan kamu jawab dengan kaget "iyaa".
+                </p>
+                <div class="mt-auto grid grid-cols-3 gap-2">
+                  <img
+                    src="/images/momen2 (2).jpg"
+                    class="w-full h-16 object-cover rounded-md opacity-80"
+                    alt=""
+                  />
+                  <img
+                    src="/images/momen2 (3).jpg"
+                    class="w-full h-16 object-cover rounded-md opacity-80"
+                    alt=""
+                  />
+                  <img
+                    src="/images/momen2 (4).jpg"
+                    class="w-full h-16 object-cover rounded-md opacity-80"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </a>
+
+            <!-- 3. 12 Des -->
+            <a
+              href="/momen/momen3.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="rounded-3xl overflow-hidden border border-pink-500/30 bg-white/5 flex flex-col hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(236,72,153,0.4)] transition"
+            >
+              <img
+                src="/images/momen3.jpg"
+                alt="November"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4 text-sm flex-1 flex flex-col">
+                <p class="text-pink-300 font-semibold mb-1">
+                  November
+                </p>
+                <p class="text-[11px] text-pink-200 mb-2">November</p>
+                <p class="text-pink-100 mb-3">
+                  november adalah bulan di mana kita mulai sering jalan bareng, dari
+                  kuliah, makan, ngerjain tugas bareng, pokoknya hampir tiap hari kita habisin waktu bareng. 
+                  nakal pulang jam 11 malem terus WKWKWK. aku suka cara kamu yang
+                  selalu bisa bikin aku ketawa dan nyaman jadi diri sendiri.
+                  aku ngerasa beruntung banget punya kamu di hidup aku seli.
+                </p>
+                <div class="mt-auto grid grid-cols-3 gap-2">
+                  <img
+                    src="/images/momen3 (2).jpg"
+                    class="w-full h-16 object-cover rounded-md opacity-80"
+                    alt=""
+                  />
+                  <img
+                    src="/images/momen3 (3).jpg"
+                    class="w-full h-16 object-cover rounded-md opacity-80"
+                    alt=""
+                  />
+                  <img
+                    src="/images/momen3 (4).jpg"
+                    class="w-full h-16 object-cover rounded-md opacity-80"
+                    alt=""
+                    />
+                </div>
+              </div>
+            </a>
+
+            <!-- 4. 16 Des -->
+            <a
+              href="/momen/momen4.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="rounded-3xl overflow-hidden border border-pink-500/30 bg-white/5 flex flex-col hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(236,72,153,0.4)] transition"
+            >
+              <img
+                src="/images/momen4.jpg"
+                alt="Desember, Kita & Cerita"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4 text-sm flex-1 flex flex-col">
+                <p class="text-pink-300 font-semibold mb-1">
+                  Desember
+                </p>
+                <p class="text-[11px] text-pink-200 mb-2">Desember</p>
+                <p class="text-pink-100 mb-3">
+                    desember adalah bulan di mana kita mulai sibuk tugas akhir semester
+                    tapi kita tetep usahain buat luangin waktu bareng ya seli. makasih ya udah 
+                    menjalani hubungan ini. Aku suka cara kamu yang selalu mendukung aku
+                    dalam segala hal. Kamu bikin aku ngerasa spesial setiap hari. Makasih lagi 
+                    seli udah jadi pacar aku yang perfect.
+                </p>
+                <div class="mt-auto grid grid-cols-3 gap-2">
+                  <img
+                    src="/images/momen4 (2).jpg"
+                    class="w-full h-16 object-cover rounded-md opacity-80"
+                    alt=""
+                  />
+                  <img
+                    src="/images/momen4 (3).jpg"
+                    class="w-full h-16 object-cover rounded-md opacity-80"
+                    alt=""
+                  />
+                    <img
+                        src="/images/momen4 (4).jpg"
+                        class="w-full h-16 object-cover rounded-md opacity-80"
+                        alt=""
+                    />
+                </div>
+              </div>
+            </a>
+
+            <!-- 5. Foto studio -->
+            <a
+              href="/momen/momen5.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="rounded-3xl overflow-hidden border border-pink-500/30 bg-white/5 flex flex-col hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(236,72,153,0.4)] transition"
+            >
+              <img
+                src="/images/momen5.jpg"
+                alt="Foto Studio, Versi Terbaik Kita"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4 text-sm flex-1 flex flex-col">
+                <p class="text-pink-300 font-semibold mb-1">
+                  Foto Studio, Versi Terbaik Kita
+                </p>
+                <p class="text-[11px] text-pink-200 mb-2">
+                  Foto studio
+                </p>
+                <p class="text-pink-100 mb-3">
+                  Di depan kamera, kita diminta untuk tersenyum. Tapi jujur,
+                  bersamamu, aku tidak pernah perlu berpura‑pura. Setiap
+                  senyuman yang aku berikan adalah cerminan dari kebahagiaan. Kamu
+                  membuatku merasa diterima sepenuhnya, dan itu adalah hadiah
+                    terindah yang pernah aku terima.
+                </p>
+                <div class="mt-auto grid grid-cols-3 gap-2">
+                  <img
+                    src="/images/momen5 (2).jpg"
+                    class="w-full h-16 object-cover rounded-md opacity-80"
+                    alt=""
+                  />
+                  <img
+                    src="/images/momen5 (3).jpg"
+                    class="w-full h-16 object-cover rounded-md opacity-80"
+                    alt=""
+                  />
+                    <img
+                        src="/images/momen5 (15).jpg"
+                        class="w-full h-16 object-cover rounded-md opacity-80"
+                        alt=""
+                    />
+                </div>
+              </div>
+            </a>
+
+            <!-- 6. Permintaan maaf -->
+            <a
+              href="/momen/momen6.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="rounded-3xl overflow-hidden border border-pink-500/30 bg-white/5 flex flex-col hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(236,72,153,0.4)] transition"
+            >
+              <img
+                src="/images/momen6.jpg"
+                alt="Untuk Hari Ketika Kamu Menangis"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4 text-sm flex-1 flex flex-col">
+                <p class="text-pink-300 font-semibold mb-1">
+                  Untuk Hari Ketika Kamu Menangis
+                </p>
+                <p class="text-[11px] text-pink-200 mb-2">Libur Dua Bulan</p>
+                <p class="text-pink-100 mb-3">
+                  LDR adalah hari yang paling tidak ingin aku ulangi. apalagi aku bikin kamu nangis.
+                  hari ketika aku bener-bener ngerasa bersalah. Aku ga bisa ngehapus
+                  hari itu, tapi aku bakal jadiin pengingat bahwa
+                  aku harus lebih hati‑hati jaga hati seli. Aku janji bakal
+                  berusaha jadi yang terbaik buat kamu dan hubungan kita.
+                </p>
+                <div class="mt-auto grid grid-cols-3 gap-2">
+                  <img
+                    src="/images/momen6 (2).jpg"
+                    class="w-full h-16 object-cover rounded-md opacity-80"
+                    alt=""
+                  />
+                  <img
+                    src="/images/momen6 (3).jpg"
+                    class="w-full h-16 object-cover rounded-md opacity-80"
+                    alt=""
+                  />
+                    <img
+                        src="/images/momen6 (4).jpg"
+                        class="w-full h-16 object-cover rounded-md opacity-80"
+                        alt=""
+                    />
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- JS: kontrol play/pause audio -->
+    <script>
+      const audio = document.getElementById("bg-audio");
+      const btn = document.getElementById("play-toggle");
+      const textSpan = document.getElementById("play-text");
+      let isPlaying = false;
+
+      if (btn && audio && textSpan) {
+        btn.addEventListener("click", () => {
+          if (!isPlaying) {
+            audio
+              .play()
+              .then(() => {
+                isPlaying = true;
+                textSpan.textContent = "Stopp";
+              })
+              .catch(() => {
+                // autoplay mungkin diblokir, biarkan saja
+              });
+          } else {
+            audio.pause();
+            isPlaying = false;
+            textSpan.textContent = "Putar Lagu Kita";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
